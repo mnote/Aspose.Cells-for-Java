@@ -30,8 +30,22 @@
           <name>Aspose Java API</name>
           <url>http://repository.aspose.com/repo/</url>
       </repository>
+        <repository>
+            <id>ali-maven</id>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+        </repository>
 </repositories>
 <dependencies>
+    <dependency>
+        <groupId>org.javassist</groupId>
+        <artifactId>javassist</artifactId>
+        <version>3.28.0-GA</version>
+    </dependency>
+    <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>2.11.0</version>
+    </dependency>
     <dependency>
         <groupId>com.aspose</groupId>
         <artifactId>aspose-cells</artifactId>
@@ -47,6 +61,6 @@
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcprov-jdk15on</artifactId>
         <version>1.60</version>
-    </dependency>        
+    </dependency>
 </dependencies>
 </project>

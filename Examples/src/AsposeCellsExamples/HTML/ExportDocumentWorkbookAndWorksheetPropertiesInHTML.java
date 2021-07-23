@@ -4,14 +4,18 @@ import com.aspose.cells.*;
 import AsposeCellsExamples.Utils;
 
 public class ExportDocumentWorkbookAndWorksheetPropertiesInHTML {
-	
+
 	static String srcDir = Utils.Get_SourceDirectory();
 	static String outDir = Utils.Get_OutputDirectory();
 
 	public static void main(String[] args) throws Exception {
 
+		com.aspose.cells.License license = new com.aspose.cells.License();
+
+		license.setLicense("Aspose.Cells.Java.lic");
+
 		System.out.println("Aspose.Cells for Java Version: " + CellsHelper.getVersion());
-		
+
 		//Load the sample Excel file
 		Workbook workbook = new Workbook(srcDir + "sampleExportDocumentWorkbookAndWorksheetPropertiesInHTML.xlsx");
 

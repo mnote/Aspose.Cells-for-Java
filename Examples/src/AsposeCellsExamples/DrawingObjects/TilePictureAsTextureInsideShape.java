@@ -3,12 +3,18 @@ package AsposeCellsExamples.DrawingObjects;
 import com.aspose.cells.*;
 import AsposeCellsExamples.Utils;
 
+import java.io.File;
+
 public class TilePictureAsTextureInsideShape {
-	
+
 	static String srcDir = Utils.Get_SourceDirectory();
 	static String outDir = Utils.Get_OutputDirectory();
 
 	public static void main(String[] args) throws Exception {
+
+		com.aspose.cells.License license = new com.aspose.cells.License();
+
+		license.setLicense("Aspose.Cells.Java.lic");
 
 		System.out.println("Aspose.Cells for Java Version: " + CellsHelper.getVersion());
 
@@ -24,8 +30,14 @@ public class TilePictureAsTextureInsideShape {
 		// Tile Picture as a Texture inside the Shape
 		sh.getFill().getTextureFill().setTiling(true);
 
+		if(!new File(outDir).exists()) {
+			new File(outDir).mkdir();
+		}
+
 		// Save the output Excel file
 		wb.save(outDir + "outputTextureFill_IsTiling.xlsx");
+
+		System.out.println(new File(outDir, "outputTextureFill_IsTiling.xlsx"));
 
 		// Print the message
 		System.out.println("TilePictureAsTextureInsideShape executed successfully.");

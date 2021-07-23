@@ -36,3 +36,4 @@ Out*/
 *.lic
 Data/*Out*
 /.metadata/
+/Examples/src/resources/02_OutputDirectory/

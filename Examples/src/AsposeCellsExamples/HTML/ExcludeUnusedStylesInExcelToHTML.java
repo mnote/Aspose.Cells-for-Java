@@ -4,14 +4,18 @@ import com.aspose.cells.*;
 import AsposeCellsExamples.Utils;
 
 public class ExcludeUnusedStylesInExcelToHTML {
-	
+
 	static String srcDir = Utils.Get_SourceDirectory();
 	static String outDir = Utils.Get_OutputDirectory();
 
 	public static void main(String[] args) throws Exception {
 
+		com.aspose.cells.License license = new com.aspose.cells.License();
+
+		license.setLicense("Aspose.Cells.Java.lic");
+
 		System.out.println("Aspose.Cells for Java Version: " + CellsHelper.getVersion());
-		
+
 		//Create workbook
 		Workbook wb = new Workbook();
 
@@ -32,7 +36,7 @@ public class ExcludeUnusedStylesInExcelToHTML {
 
 		//Save the workbook in html format
 		wb.save(outDir + "outputExcludeUnusedStylesInExcelToHTML.html", opts);
-		
+
 		// Print the message
 		System.out.println("ExcludeUnusedStylesInExcelToHTML executed successfully.");
 	}
