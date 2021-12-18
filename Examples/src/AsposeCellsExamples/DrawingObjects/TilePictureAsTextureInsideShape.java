@@ -14,7 +14,7 @@ public class TilePictureAsTextureInsideShape {
 
 		com.aspose.cells.License license = new com.aspose.cells.License();
 
-		license.setLicense("Aspose.Cells.Java.lic");
+		//license.setLicense("Aspose.Cells.Java.lic");
 
 		System.out.println("Aspose.Cells for Java Version: " + CellsHelper.getVersion());
 

@@ -4,11 +4,14 @@ import com.aspose.cells.*;
 import AsposeCellsExamples.Utils;
 
 public class SetScalableColumnWidth {
-	
+
 	static String srcDir = Utils.Get_SourceDirectory();
 	static String outDir = Utils.Get_OutputDirectory();
 
 	public static void main(String[] args) throws Exception {
+
+        com.aspose.cells.License license = new com.aspose.cells.License();
+        license.setLicense("Aspose.Cells.Java.lic");
 
         // ExStart:1
         // Load sample source file
@@ -26,7 +29,7 @@ public class SetScalableColumnWidth {
         // Save the workbook in Html format with specified Html Save Options
         wb.save(outDir + "outsampleForScalableColumns.html", options);
         // ExEnd:1
-		
+
 		// Print the message
 		System.out.println("SetScalableColumnWidth executed successfully.");
 	}
